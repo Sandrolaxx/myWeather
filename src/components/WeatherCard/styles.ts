@@ -1,13 +1,36 @@
+import LinearGradient from "react-native-linear-gradient";
 import styled from "styled-components/native";
 
-export const Container = styled.View`
-    flex: 1;
+export const GradientContainer = styled(LinearGradient)`
+    height: 60%;
+    width: 90%;
+    margin: 6px;
     justify-content: center;
     align-items: center;
-    background-color: "#e4rer";
+    border-radius: 10px;
 `
 
-export const Title = styled.Text`
-    padding: 6px;
-    color: blueviolet;
+export const TextDate = styled.Text`
+    color: #F0F0F0;
+    font-size: 18px;
+    font-family: Ubuntu-R;
+`
+
+export const TextCity = styled.Text`
+    margin-bottom: 16px;
+    color: #F0F0F0;
+    font-size: 28px;
+    font-family: Ubuntu-M;
+    `
+
+export const TextTemp = styled.Text`
+    color: #F0F0F0;
+    font-size: 68px;
+    font-family: Ubuntu-B;
+`
+
+export const Emoji = styled.Text`
+    margin-bottom: 12px;
+    font-size: 142px;
+    color: black;
 `

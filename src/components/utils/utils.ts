@@ -6,6 +6,12 @@ export const screenOptions: DrawerNavigationOptions = {
     headerTransparent: true,
     headerTitleAlign: "center",
     headerTintColor: "#0051bb",
+    headerTitleStyle: {
+        fontFamily: "Ubuntu-M"
+    },
+    drawerLabelStyle: {
+        fontFamily: "Ubuntu-M"
+    },
     headerBackgroundContainerStyle: {
         backgroundColor: "#effffb",
         borderBottomWidth: 0.2,
@@ -17,4 +23,8 @@ export const screenOptions: DrawerNavigationOptions = {
         backgroundColor: '#effffb',
         width: "50%",
     }
+}
+
+export enum EmojiEnum {
+    test = "👹"
 }
