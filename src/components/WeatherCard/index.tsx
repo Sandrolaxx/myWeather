@@ -1,4 +1,5 @@
 import React from "react";
+import { EnumEmoji } from "../utils/utils";
 import { Emoji, GradientContainer, TextCity, TextDate, TextTemp, } from "./styles";
 
 export default function WatherCard() {
@@ -7,7 +8,7 @@ export default function WatherCard() {
             <TextDate>01/02/2022</TextDate>
             <TextCity>Cascavel-PR</TextCity>
             <Emoji>
-                {'\u26c5'}
+                {String.fromCodePoint(EnumEmoji.SUN_BEHIND_CLOUD)}
             </Emoji>
             <TextTemp>23º</TextTemp>
         </GradientContainer>
