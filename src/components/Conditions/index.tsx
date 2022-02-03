@@ -1,5 +1,5 @@
 import React from "react";
-import { EnumEmoji } from "../utils/utils";
+import { EnumEmoji } from "../../utils/types";
 import { Container, Emoji, EmojiContainer, Text } from "./styles";
 
 export default function Conditions() {
@@ -11,15 +11,15 @@ export default function Conditions() {
             </EmojiContainer>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.SUNRISE)}</Emoji>
-                <Text>7 KM/H</Text>
+                <Text>5:22 AM</Text>
             </EmojiContainer>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.SUNSET)}</Emoji>
-                <Text>7 KM/H</Text>
+                <Text>6:10 PM</Text>
             </EmojiContainer>
             <EmojiContainer>
-                <Emoji>{String.fromCodePoint(EnumEmoji.SUN_BEHIND_CLOUD)}</Emoji>
-                <Text>7 KM/H</Text>
+                <Emoji>{String.fromCodePoint(EnumEmoji.DROPLET)}</Emoji>
+                <Text>65%</Text>
             </EmojiContainer>
         </Container>
     );

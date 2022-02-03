@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import { NavigationContainer } from '@react-navigation/native';
-import { screenOptions, Drawer } from "./components/utils/utils";
+import { screenOptions, Drawer } from "./utils/utils";
 
 export default function Routes() {
     return (

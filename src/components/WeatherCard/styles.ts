@@ -2,12 +2,13 @@ import LinearGradient from "react-native-linear-gradient";
 import styled from "styled-components/native";
 
 export const GradientContainer = styled(LinearGradient)`
-    height: 60%;
+    height: 56%;
     width: 90%;
-    margin: 6px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 16px;
+    margin-top: 72px;
 `
 
 export const TextDate = styled.Text`

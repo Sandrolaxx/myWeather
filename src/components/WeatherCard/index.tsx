@@ -1,5 +1,5 @@
 import React from "react";
-import { EnumEmoji } from "../utils/utils";
+import { EnumEmoji } from "../../utils/types";
 import { Emoji, GradientContainer, TextCity, TextDate, TextTemp, } from "./styles";
 
 export default function WatherCard() {
