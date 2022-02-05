@@ -8,24 +8,35 @@ export type ForecastData = {
 }
 
 export enum EnumEmoji {
-    SUN_BEHIND_CLOUD = 0x26C5,
     SUNRISE = 0x1F304,
     SUNSET = 0x1F307,
     WIND = 0x1F4A8,
-    DROPLET = 0x1F4A7
+    DROPLET = 0x1F4A7,
+    STORM = 0x1F329,
+    SNOW = 0x1F328,
+    HAIL = 0x1F9CA,
+    RAIN = 0x1F327,
+    FOG = 0x1F301,
+    CLEAR_DAY = 0x1F31E,
+    CLEAR_NIGHT = 0x1F31A,
+    CLOUD = 0x2601,
+    CLOUDLY_DAY = 0x1F325,
+    CLOUDLY_NIGHT = 0x2601,
+    NONE_DAY = 0x1F31E,
+    NONE_NIGHT = 0x1F31A
 }
 
 export enum ForecastWeather {
-    storm = EnumEmoji.SUNRISE,
-    snow = EnumEmoji.WIND,
-    hail = EnumEmoji.WIND,
-    rain = EnumEmoji.SUNRISE,
-    fog = EnumEmoji.DROPLET,
-    clear_day = EnumEmoji.WIND,
-    clear_night = EnumEmoji.WIND,
-    cloud = EnumEmoji.DROPLET,
-    cloudly_day = EnumEmoji.WIND,
-    cloudly_night = EnumEmoji.SUNRISE,
-    none_day = EnumEmoji.DROPLET,
-    none_night = EnumEmoji.SUNRISE,
+    storm = EnumEmoji.STORM,
+    snow = EnumEmoji.SNOW,
+    hail = EnumEmoji.HAIL,
+    rain = EnumEmoji.RAIN,
+    fog = EnumEmoji.FOG,
+    clear_day = EnumEmoji.CLEAR_DAY,
+    clear_night = EnumEmoji.CLEAR_NIGHT,
+    cloud = EnumEmoji.CLOUD,
+    cloudly_day = EnumEmoji.CLOUDLY_DAY,
+    cloudly_night = EnumEmoji.CLOUDLY_NIGHT,
+    none_day = EnumEmoji.NONE_DAY,
+    none_night = EnumEmoji.NONE_NIGHT,
 }

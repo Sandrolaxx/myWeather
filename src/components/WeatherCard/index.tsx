@@ -8,7 +8,7 @@ export default function WatherCard() {
             <TextDate>01/02/2022</TextDate>
             <TextCity>Cascavel-PR</TextCity>
             <Emoji>
-                {String.fromCodePoint(EnumEmoji.SUN_BEHIND_CLOUD)}
+                {String.fromCodePoint(EnumEmoji.SNOW)}
             </Emoji>
             <TextTemp>23º</TextTemp>
         </GradientContainer>
