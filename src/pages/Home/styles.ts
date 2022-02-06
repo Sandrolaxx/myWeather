@@ -15,3 +15,9 @@ export const Title = styled.Text`
 export const ForecastList = styled.FlatList`
     margin-left: 10px;
 `
+
+export const Loading = styled.Text`
+    margin-top: 70px;
+    font-size: 24px;
+    color: blueviolet;
+`

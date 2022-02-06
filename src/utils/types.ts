@@ -1,3 +1,26 @@
+export type FullResponseWeather = {
+    by: string,
+    valid_key: boolean,
+    results: WeatherData
+}
+
+export interface WeatherProps {
+    weather: WeatherData;
+}
+
+export type WeatherData = {
+    temp: number,
+    currently: string,
+    city: string,
+    date: string,
+    humidity: number,
+    wind_speedy: string,
+    sunrise: string,
+    sunset: string,
+    condition_slug: string,
+    forecast: ForecastData[]
+}
+
 export type ForecastData = {
     date: string,
     weekday: string,

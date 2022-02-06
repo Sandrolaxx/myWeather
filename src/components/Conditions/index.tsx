@@ -1,25 +1,25 @@
 import React from "react";
-import { EnumEmoji } from "../../utils/types";
+import { EnumEmoji, WeatherProps } from "../../utils/types";
 import { Container, Emoji, EmojiContainer, Text } from "./styles";
 
-export default function Conditions() {
+export default function Conditions({weather}: WeatherProps) {
     return (
         <Container>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.WIND)}</Emoji>
-                <Text>7 KM/H</Text>
+                <Text>{weather.wind_speedy}</Text>
             </EmojiContainer>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.SUNRISE)}</Emoji>
-                <Text>5:22 AM</Text>
+                <Text>{weather.sunrise}</Text>
             </EmojiContainer>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.SUNSET)}</Emoji>
-                <Text>6:10 PM</Text>
+                <Text>{weather.sunset}</Text>
             </EmojiContainer>
             <EmojiContainer>
                 <Emoji>{String.fromCodePoint(EnumEmoji.DROPLET)}</Emoji>
-                <Text>65%</Text>
+                <Text>{weather.humidity}</Text>
             </EmojiContainer>
         </Container>
     );

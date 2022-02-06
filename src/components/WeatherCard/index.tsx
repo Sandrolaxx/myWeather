@@ -1,16 +1,18 @@
 import React from "react";
-import { EnumEmoji } from "../../utils/types";
-import { Emoji, GradientContainer, TextCity, TextDate, TextTemp, } from "./styles";
+import { ForecastWeather, WeatherProps } from "../../utils/types";
+import { Emoji, GradientContainer, TextCity, TextDate, TextTemp } from "./styles";
 
-export default function WatherCard() {
+export default function WatherCard({weather}: WeatherProps) {
+    const emoji = Number.parseInt(ForecastWeather[weather.condition_slug]);
+
     return (
         <GradientContainer colors={["#31cef5", "#0074D9"]} >
-            <TextDate>01/02/2022</TextDate>
-            <TextCity>Cascavel-PR</TextCity>
+            <TextDate>{weather.date}</TextDate>
+            <TextCity>{weather.city}</TextCity>
             <Emoji>
-                {String.fromCodePoint(EnumEmoji.SNOW)}
+                {String.fromCodePoint(emoji)}
             </Emoji>
-            <TextTemp>23º</TextTemp>
+            <TextTemp>{weather.temp}</TextTemp>
         </GradientContainer>
     );
 }
