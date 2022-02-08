@@ -1,5 +1,6 @@
 import React from "react";
-import { EnumEmoji, ForecastData, ForecastWeather } from "../../utils/types";
+import { ForecastData } from "../../utils/types";
+import { resolveEmoji } from "../../utils/utils";
 import { Container, Emoji, TextDate, TextMax, TextMin } from "./styles";
 
 interface ForecastProps {
@@ -7,13 +8,12 @@ interface ForecastProps {
 }
 
 export default function Forecast({ data }: ForecastProps) {
-
-    const emoji = Number.parseInt(ForecastWeather[data.condition]);
+    const emoji = resolveEmoji(data.condition.toString()); 
 
     return(
         <Container>
             <TextDate>{data.date}</TextDate>
-            <Emoji>{String.fromCodePoint(emoji)}</Emoji>
+            <Emoji>{emoji}</Emoji>
             <TextMin>{data.min}º</TextMin>
             <TextMax>{data.max}º</TextMax>
         </Container>

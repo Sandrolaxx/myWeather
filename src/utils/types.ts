@@ -41,12 +41,13 @@ export enum EnumEmoji {
     RAIN = 0x1F327,
     FOG = 0x1F301,
     CLEAR_DAY = 0x1F31E,
-    CLEAR_NIGHT = 0x1F31A,
+    CLEAR_NIGHT = 0x1F31D,
     CLOUD = 0x2601,
     CLOUDLY_DAY = 0x1F325,
     CLOUDLY_NIGHT = 0x2601,
     NONE_DAY = 0x1F31E,
-    NONE_NIGHT = 0x1F31A
+    NONE_NIGHT = 0x1F31A,
+    SEARCH = 0x1F50D
 }
 
 export enum ForecastWeather {

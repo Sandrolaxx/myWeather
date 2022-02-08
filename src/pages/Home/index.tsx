@@ -11,10 +11,12 @@ import { Container, ForecastList, Loading } from "./styles";
 export default function Home() {
     const [isLoading, setLoading] = useState(true);
     const [weather, setWeather] = useState<WeatherData>();
+    const defaultLatitude = "-24.9636888";
+    const defaultLongitude = "-53.5073711";
 
     async function callbakcFetchWeather(position: GeolocationResponse | null) {
-        const latitude = position !== null ? position.coords.latitude.toString() : "-24.9636888";
-        const longitude = position !== null ? position.coords.longitude.toString() : "-53.5073711";
+        const latitude = position !== null ? position.coords.latitude.toString() : defaultLatitude;
+        const longitude = position !== null ? position.coords.longitude.toString() : defaultLongitude;
 
         await fetchWeather(latitude, longitude)
             .then(res => setWeather(res!))
@@ -36,7 +38,7 @@ export default function Home() {
     }, []);
 
     return (
-        !isLoading && weather !== undefined ? (
+        !isLoading && weather !== undefined ? 
             <Container>
                 <WatherCard weather={weather!} />
                 <Conditions weather={weather!} />
@@ -48,12 +50,9 @@ export default function Home() {
                     renderItem={({ item }) => <Forecast data={item} />}
                 />
             </Container>
-            )
             :
-            (
             <Container>
                 <Loading>Carregando...</Loading>
             </Container>
-            )
     );
 }

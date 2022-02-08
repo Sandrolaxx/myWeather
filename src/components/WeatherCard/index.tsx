@@ -1,18 +1,20 @@
 import React from "react";
-import { ForecastWeather, WeatherProps } from "../../utils/types";
+import { WeatherProps } from "../../utils/types";
+import { resolveBgColorCard, resolveEmoji } from "../../utils/utils";
 import { Emoji, GradientContainer, TextCity, TextDate, TextTemp } from "./styles";
 
 export default function WatherCard({weather}: WeatherProps) {
-    const emoji = Number.parseInt(ForecastWeather[weather.condition_slug]);
+    const emoji = resolveEmoji(weather.condition_slug); 
+    const containerColor = resolveBgColorCard(weather.currently);
 
     return (
-        <GradientContainer colors={["#31cef5", "#0074D9"]} >
+        <GradientContainer colors={containerColor} >
             <TextDate>{weather.date}</TextDate>
             <TextCity>{weather.city}</TextCity>
             <Emoji>
-                {String.fromCodePoint(emoji)}
+                {emoji}
             </Emoji>
-            <TextTemp>{weather.temp}</TextTemp>
+            <TextTemp>{weather.temp}º</TextTemp>
         </GradientContainer>
     );
 }

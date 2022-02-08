@@ -1,4 +1,5 @@
 import { createDrawerNavigator, DrawerNavigationOptions } from "@react-navigation/drawer";
+import { ForecastWeather } from "./types";
 
 export const Drawer = createDrawerNavigator();
 
@@ -23,4 +24,12 @@ export const screenOptions: DrawerNavigationOptions = {
         backgroundColor: '#effffb',
         width: "50%",
     }
+}
+
+export function resolveBgColorCard(currently: string): string[] {
+    return currently === "dia" ? ["#31cef5", "#0074D9"] : ["#108aa8", "#05235a"];
+}
+
+export function resolveEmoji(conditionSlug: string) {
+    return String.fromCodePoint(Number.parseInt(ForecastWeather[conditionSlug]));
 }

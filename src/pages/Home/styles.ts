@@ -17,7 +17,8 @@ export const ForecastList = styled.FlatList`
 `
 
 export const Loading = styled.Text`
-    margin-top: 70px;
-    font-size: 24px;
-    color: blueviolet;
+    margin-top: 64px;
+    color: #0074D9;
+    font-size: 28px;
+    font-family: Ubuntu-M;
 `
