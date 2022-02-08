@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Emoji } from "../../components/Conditions/styles";
 import { EnumEmoji } from "../../utils/types";
-import { resolveEmoji } from "../../utils/utils";
-import { Container, InputCity, SearchBox, Title } from "./styles";
+import { Container, EmojiContainer, InputCity, SearchBox, Title } from "./styles";
 
 export default function Search() {
     const [city, setCity] = useState<string>();
@@ -13,11 +12,13 @@ export default function Search() {
             <InputCity 
                 value={city}
                 onChangeText={value => setCity(value)}
-                placeholder="Ex: Londrina, PR"
+                placeholder=" Ex: Londrina, PR "
             />
-            <Emoji>
-                {String.fromCodePoint(EnumEmoji.SEARCH)}
-            </Emoji>
+            <EmojiContainer>
+                <Emoji>
+                    {String.fromCodePoint(EnumEmoji.SEARCH)}
+                </Emoji>
+            </EmojiContainer>
             </SearchBox>
         </Container>
     );
