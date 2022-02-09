@@ -2,13 +2,13 @@ import LinearGradient from "react-native-linear-gradient";
 import styled from "styled-components/native";
 
 export const GradientContainer = styled(LinearGradient)`
-    height: 56%;
+    height: ${props => props.small ? "42%" : "56%"};
     width: 90%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     margin-bottom: 16px;
-    margin-top: 72px;
+    margin-top: ${props => props.small ? "6%" : "18%"};
 `
 
 export const TextDate = styled.Text`

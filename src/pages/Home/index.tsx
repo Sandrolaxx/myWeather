@@ -40,11 +40,12 @@ export default function Home() {
     return (
         !isLoading && weather !== undefined ? 
             <Container>
-                <WatherCard weather={weather!} />
+                <WatherCard weather={weather!} renderEmoji={true} />
                 <Conditions weather={weather!} />
                 <ForecastList
-                    data={weather!.forecast}
                     horizontal={true}
+                    data={weather!.forecast}
+                    showsHorizontalScrollIndicator={false}
                     contentContainerStyle={{ paddingBottom: "5%", }}
                     keyExtratctor={item => item.date}
                     renderItem={({ item }) => <Forecast data={item} />}

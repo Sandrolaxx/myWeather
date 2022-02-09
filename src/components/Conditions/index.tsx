@@ -1,8 +1,8 @@
 import React from "react";
-import { EnumEmoji, WeatherProps } from "../../utils/types";
+import { EnumEmoji, ConditionProps } from "../../utils/types";
 import { Container, Emoji, EmojiContainer, Text } from "./styles";
 
-export default function Conditions({weather}: WeatherProps) {
+export default function Conditions({weather}: ConditionProps) {
     return (
         <Container>
             <EmojiContainer>

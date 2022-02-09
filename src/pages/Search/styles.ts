@@ -4,7 +4,7 @@ export const Container = styled.SafeAreaView`
     flex: 1;
     align-items: center;
     padding-top: 20%;
-    background-color: #e8f0ff;
+    background-color: #E8F0FF;
 `
 
 export const SearchBox = styled.View`
@@ -17,18 +17,18 @@ export const SearchBox = styled.View`
 export const InputCity = styled.TextInput`
     width: 80%;
     height: 50px;
-    background-color: #fff;
+    background-color: #FFF;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     padding: 8px;
 `
 
-export const EmojiContainer = styled.View`
+export const EmojiContainer = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     width: 20%;
     height: 50px;
-    background-color: #31cef5;
+    background-color: #0074D9;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 `

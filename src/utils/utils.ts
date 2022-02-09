@@ -6,7 +6,7 @@ export const Drawer = createDrawerNavigator();
 export const screenOptions: DrawerNavigationOptions = {
     headerTransparent: true,
     headerTitleAlign: "center",
-    headerTintColor: "#0051bb",
+    headerTintColor: "#0051BB",
     headerTitleStyle: {
         fontFamily: "Ubuntu-M"
     },
@@ -14,20 +14,20 @@ export const screenOptions: DrawerNavigationOptions = {
         fontFamily: "Ubuntu-M"
     },
     headerBackgroundContainerStyle: {
-        backgroundColor: "#effffb",
+        backgroundColor: "#EFFFFF",
         borderBottomWidth: 0.2,
-        borderBottomColor: "#d1d1d1"
+        borderBottomColor: "#D1D1D1"
     },
     drawerActiveBackgroundColor: "#0074D9",
-    drawerActiveTintColor:"#fff",
+    drawerActiveTintColor:"#FFF",
     drawerStyle: {
-        backgroundColor: '#effffb',
+        backgroundColor: '#EFFFFF',
         width: "50%",
     }
 }
 
 export function resolveBgColorCard(currently: string): string[] {
-    return currently === "dia" ? ["#31cef5", "#0074D9"] : ["#108aa8", "#05235a"];
+    return currently === "dia" ? ["#31CEF5", "#0074D9"] : ["#108AA8", "#05235A"];
 }
 
 export function resolveEmoji(conditionSlug: string) {

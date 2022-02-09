@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    height: 10%;
+    height: 68px;
     width: 90%;
-    background-color: #fff;
+    background-color: #FFF;
     justify-content: space-around;
     flex-direction: row;
     border-radius: 10px;

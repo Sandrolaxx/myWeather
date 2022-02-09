@@ -5,12 +5,12 @@ const baseUrl = "https://api.hgbrasil.com";
 const pathWeather = "/weather";
 
 export async function fetchWeather(latitude: string, longitude: string) {
+    var url = new URL(baseUrl.concat(pathWeather));
     const data = {
         key: key,
         lat: latitude,
         lon: longitude
     };
-    var url = new URL(baseUrl.concat(pathWeather));
 
     for (let k in data) {
         url.searchParams.append(k, data[k]);
@@ -22,5 +22,19 @@ export async function fetchWeather(latitude: string, longitude: string) {
 
             return fullResponse.results;
         }));
+}
 
+export async function fetchCityWeather(city: string) {
+    var url = new URL(baseUrl.concat(pathWeather));
+    const data = {
+        key: key,
+        city_name: city
+    };
+
+    for (let k in data) {
+        url.searchParams.append(k, data[k]);
+    }
+
+    return await fetch(url.href)
+        .then(data => data.json());
 }

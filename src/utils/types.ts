@@ -4,7 +4,12 @@ export type FullResponseWeather = {
     results: WeatherData
 }
 
-export interface WeatherProps {
+export interface CardProps {
+    weather: WeatherData,
+    renderEmoji: boolean
+}
+
+export interface ConditionProps {
     weather: WeatherData;
 }
 
