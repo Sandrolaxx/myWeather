@@ -1,13 +1,10 @@
 import { FullResponseWeather } from "../utils/types";
-
-const key = "a9b32d28"
-const baseUrl = "https://api.hgbrasil.com";
-const pathWeather = "/weather";
+import { BASE_URL, WEATHER_PATH, KEY } from "@env";
 
 export async function fetchWeather(latitude: string, longitude: string) {
-    var url = new URL(baseUrl.concat(pathWeather));
+    var url = new URL(BASE_URL.concat(WEATHER_PATH));
     const data = {
-        key: key,
+        key: KEY,
         lat: latitude,
         lon: longitude
     };
@@ -25,9 +22,9 @@ export async function fetchWeather(latitude: string, longitude: string) {
 }
 
 export async function fetchCityWeather(city: string) {
-    var url = new URL(baseUrl.concat(pathWeather));
+    var url = new URL(BASE_URL.concat(WEATHER_PATH));
     const data = {
-        key: key,
+        key: KEY,
         city_name: city
     };
 

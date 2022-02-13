@@ -1,6 +1,6 @@
 ## 🚀 Sobre o projeto
 
-É um aplicativo que possibilita a previssão do tempo e alguns dados do clima atual. Foi criado com base nos conhecimentos adquiridos no workshop do React native Insider 02, porém ao contrario do que foi passado pelo professor eu fiz o projeto ao meu modo, com TS ao invés de JS e Styled Components ao invés de StyleSheet.
+É um aplicativo que possibilita visualizar a previssão do tempo e alguns dados do clima atual. Foi criado com base nos conhecimentos adquiridos no workshop do React native Insider 02, porém ao contrario do que foi passado pelo professor eu fiz o projeto ao meu modo, com TS ao invés de JS e Styled Components ao invés de StyleSheet.
 
 ---
 
@@ -9,10 +9,16 @@
 * 🔤 Lang - [TypeScript](https://www.typescriptlang.org/)
 * ⚛️ Framework - [React Native](https://reactnative.dev/)
 * ✨ Estilização - [Styled Components](https://styled-components.com/)
+* 📌 Geolozalização - [react-native-community/geolocation](https://github.com/react-native-geolocation/react-native-geolocation)
 
 ---
 
 ## 🖼🖌Telas do projeto
+
+* Tela Inicial
+
+![Tela Inicial](https://user-images.githubusercontent.com/61207420/151702740-96af9702-45dc-4ece-b358-6a720f2c6783.png)
+
 
 ---
 
