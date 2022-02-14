@@ -9,7 +9,9 @@
 * 🔤 Lang - [TypeScript](https://www.typescriptlang.org/)
 * ⚛️ Framework - [React Native](https://reactnative.dev/)
 * ✨ Estilização - [Styled Components](https://styled-components.com/)
-* 📌 Geolozalização - [react-native-community/geolocation](https://github.com/react-native-geolocation/react-native-geolocation)
+* 🔄 Navegação - [React-navigation/native](https://reactnavigation.org/)
+* 🌈 Gradient - [React-native-linear-gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)
+* 📌 Geolozalização - [React-native-community/geolocation](https://github.com/react-native-geolocation/react-native-geolocation)
 
 ---
 
@@ -17,8 +19,35 @@
 
 * Tela Inicial
 
-![Tela Inicial](https://user-images.githubusercontent.com/61207420/151702740-96af9702-45dc-4ece-b358-6a720f2c6783.png)
+![Tela Inicial](https://user-images.githubusercontent.com/61207420/153960650-4513d221-5692-4fda-a70d-64b0bec1ecb4.png)
 
+* Scroll Lateral
+
+![Scroll Lateral](https://user-images.githubusercontent.com/61207420/153960819-c559b00c-3d6d-4dbd-9a86-982473533a8c.png)
+
+* Menu Lateral
+
+![Menu Lateral](https://user-images.githubusercontent.com/61207420/153960975-2d9f1f85-ed6d-466b-b326-8d1269debf4c.png)
+
+* Buscar Cidade
+
+![Buscar Cidade](https://user-images.githubusercontent.com/61207420/153961157-130ebbb8-83d4-44c1-8394-e54e802dd256.png)
+
+* Dados Cidade Consultada
+
+![Cidade Consultada](https://user-images.githubusercontent.com/61207420/153961257-cd0774f9-c3f9-4567-bb13-a6c734e00a94.png)
+
+* Cidade Consultada Inválida
+
+![Cidade Consultada Inválida](https://user-images.githubusercontent.com/61207420/153961404-e0ae5408-1a2c-4e4b-93c5-683710be598a.png)
+
+* Cidade Consultada Não Encontrada
+
+![Cidade Consultada Não Encontrada](https://user-images.githubusercontent.com/61207420/153961550-d86f80e5-d7f6-4673-92c3-1474738174f8.png)
+
+* Solicitando Permissão de Acesso a localização
+
+![Permissão Acesso a localização](https://user-images.githubusercontent.com/61207420/153961584-73e16d2b-4bce-47b0-ba92-0dc52b49db78.png)
 
 ---
 
@@ -52,7 +81,13 @@ yarn android
 
 O aplicativo abrirá automaticamente ao fim do comando npm/yarn android.
 
---
+---
+
+## 📲 Dados utilizados na aplicação
+
+Os dados utilizados no projeto são consumidos da [API Weather](https://hgbrasil.com/status/weather) da [HGBrasil](https://hgbrasil.com/), onde é possível criar uma conta gratuitamente e realizar um determinado número de Requests gratuitos por dia.
+
+---
 
 ## 📃 Licença
 
